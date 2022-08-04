@@ -43,3 +43,5 @@ my_data_row = my_cur.fetchone()
 streamlit.text("The fruit load list contains:")
 streamlit.text(my_data_row)
 
+
+add_my_fruit = requests.get("https://fruityvice.com/api/fruit/"+"jackfruit")
