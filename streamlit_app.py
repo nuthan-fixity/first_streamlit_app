@@ -42,7 +42,6 @@ my_cur.execute("select * from fruit_load_list")
 my_data_row = my_cur.fetchone()
 streamlit.text("The fruit load list contains:")
 streamlit.text(my_data_row)
-
 import requests
 add_my_fruit = requests.get("https://fruityvice.com/api/fruit/"+"jackfruit")
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
